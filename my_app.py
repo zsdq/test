@@ -9,26 +9,6 @@ import tempfile
 import base64
 from io import BytesIO
 
-import os
-import sys
-import ctypes
-from rdkit import RDConfig
-
-# 配置无头环境
-os.environ['DISPLAY'] = ':0'
-os.environ['QT_QPA_PLATFORM'] = 'offscreen'
-
-# 检查并加载 RDKit 依赖
-lib_path = os.path.join(RDConfig.RDBaseDir, 'lib')
-if lib_path not in sys.path:
-    sys.path.append(lib_path)
-
-# 预加载必要的图形库
-for lib in ['libGL.so.1', 'libSM.so.6', 'libXext.so.6']:
-    try:
-        ctypes.CDLL(lib)
-    except OSError:
-        pass
 
 # 添加 CSS 样式
 st.markdown(
