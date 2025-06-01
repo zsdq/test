@@ -2,7 +2,7 @@ import streamlit as st
 from rdkit import Chem
 from rdkit.Chem import Descriptors, Draw, AllChem
 from rdkit.Chem.Draw import MolDraw2DSVG
-#from mordred import Calculator, descriptors
+from mordred import Calculator, descriptors
 import pandas as pd
 from autogluon.tabular import TabularPredictor
 import tempfile
