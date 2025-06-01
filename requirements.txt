@@ -1,6 +1,8 @@
 streamlit==1.30.0
 rdkit==2024.9.6
-mordred==1.2.0
 numpy==1.26.4
-pandas==1.5.3  # 必须降级到兼容版本
+pandas==2.1.4  # autogluon 1.2 支持的最高 pandas 2.x 版本
 autogluon==1.2.0
+
+# 使用社区维护的 mordred 分支
+git+https://github.com/mordred-descriptor/mordred.git@refs/pull/193/head
