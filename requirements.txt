@@ -4,4 +4,4 @@ numpy==1.26.4
 pandas==2.1.4
 autogluon==1.2.0
 pillow==10.4.0  # 显式指定兼容版本
-#git+git@github.com:mordred-descriptor/mordred.git
+git+git@github.com:mordred-descriptor/mordred.git
